@@ -19,6 +19,19 @@ const eyes = new Eyes();
 //⚠️️️  Please set the APPLITOOLS_API_KEY environment variable.
 eyes.setApiKey(process.env.APPLITOOLS_API_KEY);
 
+// CI
+// obtain the ID from the environment variables - the name should be specified as null
+if (process.env.CI) {
+  const batchName = null;
+  const batchId   = process.env.APPLITOOLS_BATCH_ID;
+  
+  // set the batch
+  var batchInfo = new Applitools.BatchInfo(batchName);
+  batchInfo.Id  = batchId;    
+  eyes.Batch    = batchInfo
+  
+}
+
 //scroll the entire page
 eyes.setForceFullPageScreenshot(true);
 
