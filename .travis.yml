@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - '8'
+cache:
+  directories:
+    - node_modules
+script:
+- export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
+- yarn
+- yarn test:ui

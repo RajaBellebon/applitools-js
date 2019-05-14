@@ -7,7 +7,7 @@
   "author": "raja <rbellebon@atlassian.com>",
   "license": "MIT",
   "scripts": {
-    "test": "node index.js"
+    "test:ui": "node index.js"
   },
   "devDependencies": {
     "eyes.selenium": "^3.6.3",
