@@ -1,0 +1,2 @@
+# applitools-js
+exploring applitools
