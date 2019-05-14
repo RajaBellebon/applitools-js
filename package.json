@@ -1,0 +1,16 @@
+{
+  "name": "applitools-js",
+  "version": "1.0.0",
+  "description": "Exploring applitools with js.",
+  "main": "index.js",
+  "repository": "git@github.com:RajaBellebon/applitools-js.git",
+  "author": "raja <rbellebon@atlassian.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "devDependencies": {
+    "eyes.selenium": "^3.6.3",
+    "selenium-webdriver": "^3.6.0"
+  }
+}
